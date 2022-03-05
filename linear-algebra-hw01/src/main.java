@@ -11,9 +11,7 @@ public class main {
 	    for (int i = 0; i < n; i++)
 	    {
 	        for (int j = 0; j <= n; j++) 
-	        {
 	            System.out.print(Math.round(a[i][j] * 100.0) / 100.0 + " ");
-	        } 
 	        System.out.println();
 	    }
 	}
@@ -34,9 +32,7 @@ public class main {
 	            c = 1;
 	            // check if a[i,i+1,...i+n][i] are 0
 	            while ((i + c) < n && a[i + c][i] == 0)
-	            {
 	                c++;        
-	            }
 	            // if it is the last row
 	            if ((i + c) == n)
 	            {
@@ -98,20 +94,14 @@ public class main {
 	    System.out.print("Answer : ");
 	 
 	    if (flag == 2)    
-	    {
 		    System.out.println("Infinite Solutions Exists");
-	    }
 	    else if (flag == 3)    
-	    {
 	    	System.out.println("No Solution Exists");
-	    }
 	    else 
-	    {
 	        for (int i = 0; i < n; i++)      
 	        {
 	            System.out.print( Math.round((a[i][n] / a[i][i]) * 100.0) / 100.0  +" ");    
 	        }
-	    }
 	}
 	 
 	// main class
@@ -137,9 +127,7 @@ public class main {
 		for(int i=0; i<a.length; i++) 
 		{
 			for(int j=0; j<a[i].length; j++) 
-			{
 				a[i][j] = Double.valueOf(scanner3.next());
-			}
 			System.out.print("");
 		}
 		
@@ -152,9 +140,7 @@ public class main {
 	    flag = PerformOperation(a, n);
 	     
 	    if (flag == 1)
-	    {
 	        flag = CheckConsistency(a, n, flag);
-	    }
 	 
 	    // print final matrix
 	    System.out.println("The final augmented matrix : ");

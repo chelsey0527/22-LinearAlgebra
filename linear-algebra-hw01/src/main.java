@@ -1,8 +1,6 @@
 import java.util.Scanner;
 
 public class main {
-
-	static int M = 10;
 	 
 	// print the matrix
 	static void PrintMatrix(double a[][], int n)
